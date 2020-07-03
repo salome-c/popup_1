@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Menu #2</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width" />
+            <style type="text/css">
+            	body {
+            		display: flex;
+            		justify-content: center;
+            		align-items: center;
+            		height: 100vh;
+            		overflow: hidden;
+            		background: #7D3737;
+            		font-family: sans-serif;
+            		text-align: center;
+            	}
+
+				nav {
+				  display: flex;
+				  justify-content: center;
+				  align-items: center;
+				}
+
+				nav a {
+				  width: 70px;
+				  height: 70px;
+				  background-size: 70%;
+				  background-position: center;
+				  background-repeat: no-repeat;
+				  transition:all .5s;
+				  position: relative;
+				  opacity: 0.5;
+				  color: #E7C1B8;
+				}
+
+				nav a:hover {
+				  transform:scale(1.2);
+				  margin-right: 30px;
+				  margin-left: 30px;
+				  opacity: 1;
+				}
+
+				#one {
+				  background-image: url("https://salome-c.xyz/icons/cv.png");
+				}
+
+				#two {
+				  background-image: url("https://salome-c.xyz/icons/github.png");
+				}
+
+				#three {
+				  background-image: url("https://salome-c.xyz/icons/linkedin.png");
+				}
+
+				#four {
+				  background-image: url("https://salome-c.xyz/icons/mail.png");
+				}
+
+				nav a span {
+				  opacity: 0;
+				  position: absolute;
+				  top: 70px;
+				  left: 0;
+				  width: 70px;
+				  height: 20px;
+				  transition: all .5s;
+				}
+
+				nav a:hover span {
+				  opacity: 1;
+				}
+            </style>
+        </head>
+        <body>
+			<nav>
+				<a href="#" id="one"><span>Link #1</span></a>
+				<a href="#" id="two"><span>Link #2</span></a>
+				<a href="#" id="three"><span>Link #3</span></a>
+				<a href="#" id="four"><span>Link #4</span></a>
+			</nav>
+        </body>
+    </html>
